@@ -1,3 +1,5 @@
+![Gate Allocation Engine](banner.png)
+
 <p align="center">
   <img src="https://img.shields.io/badge/lessons-19-blue?style=for-the-badge" alt="19 Lessons" />
   <img src="https://img.shields.io/badge/platforms-4-green?style=for-the-badge" alt="4 Platforms" />
