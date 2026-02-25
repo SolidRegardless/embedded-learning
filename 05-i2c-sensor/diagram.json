@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "author": "Clawwy",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0 },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -100, "left": 120 }
+  ],
+  "connections": [
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht1:SDA", "esp:15", "green", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ]
+  ]
+}

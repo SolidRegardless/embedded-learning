@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "author": "Clawwy",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico", "id": "pico", "top": 0, "left": 0 },
+    { "type": "wokwi-neopixel-ring", "id": "ring1", "top": -120, "left": 200, "attrs": { "pixels": "16" } }
+  ],
+  "connections": [
+    [ "pico:GP16", "ring1:DIN", "green", [ "v0" ] ],
+    [ "ring1:VCC", "pico:VBUS", "red", [ "v0" ] ],
+    [ "ring1:GND", "pico:GND.1", "black", [ "v0" ] ]
+  ]
+}

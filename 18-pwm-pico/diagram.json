@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "Clawwy",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico", "id": "pico", "top": 0, "left": 0 },
+    { "type": "wokwi-rgb-led", "id": "rgb1", "top": -100, "left": 200, "attrs": { "common": "cathode" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": -60, "left": 140, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r2", "top": -60, "left": 170, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r3", "top": -60, "left": 200, "attrs": { "value": "220" } },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -100, "left": 340, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP2", "r1:1", "red", [ "v0" ] ],
+    [ "r1:2", "rgb1:R", "red", [ "v0" ] ],
+    [ "pico:GP4", "r2:1", "green", [ "v0" ] ],
+    [ "r2:2", "rgb1:G", "green", [ "v0" ] ],
+    [ "pico:GP6", "r3:1", "blue", [ "v0" ] ],
+    [ "r3:2", "rgb1:B", "blue", [ "v0" ] ],
+    [ "rgb1:COM", "pico:GND.1", "black", [ "v0" ] ],
+    [ "pot1:SIG", "pico:GP26", "orange", [ "v0" ] ],
+    [ "pot1:VCC", "pico:3V3", "red", [ "v0" ] ],
+    [ "pot1:GND", "pico:GND.1", "black", [ "v0" ] ]
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "Clawwy",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-st-nucleo-c031c6", "id": "nucleo", "top": 0, "left": 0 },
+    { "type": "board-ssd1306", "id": "oled1", "top": -160, "left": 100, "attrs": {} }
+  ],
+  "connections": [
+    [ "oled1:SDA", "nucleo:D14", "blue", [ "v0" ] ],
+    [ "oled1:SCL", "nucleo:D15", "green", [ "v0" ] ],
+    [ "oled1:VCC", "nucleo:3V3", "red", [ "v0" ] ],
+    [ "oled1:GND", "nucleo:GND", "black", [ "v0" ] ]
+  ]
+}
